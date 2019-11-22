@@ -26,12 +26,36 @@
 		FE370E672387E05000EBAA97 /* nativ_to_java */ = {
 			isa = PBXGroup;
 			children = (
-				FE370E682387E05000EBAA97 /* HelloWorldJNI.java */,
-				FE370E692387E1DA00EBAA97 /* com_baeldung_jni_HelloWorldJNI.h */,
-				FE370E6A2387E20700EBAA97 /* com_baeldung_jni_HelloWorldJNI.cpp */,
+				FE370E6D238806E700EBAA97 /* com */,
 				FE370E6B2387E3C000EBAA97 /* Compile.sh */,
 			);
 			path = nativ_to_java;
+			sourceTree = "<group>";
+		};
+		FE370E6D238806E700EBAA97 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				FE370E6E2388073900EBAA97 /* baeldung */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		FE370E6E2388073900EBAA97 /* baeldung */ = {
+			isa = PBXGroup;
+			children = (
+				FE370E6F2388077400EBAA97 /* jni */,
+			);
+			path = baeldung;
+			sourceTree = "<group>";
+		};
+		FE370E6F2388077400EBAA97 /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				FE370E682387E05000EBAA97 /* HelloWorldJNI.java */,
+				FE370E692387E1DA00EBAA97 /* com_baeldung_jni_HelloWorldJNI.h */,
+				FE370E6A2387E20700EBAA97 /* com_baeldung_jni_HelloWorldJNI.cpp */,
+			);
+			path = jni;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -43,7 +67,7 @@
 			buildConfigurationList = FE370E642387DFFE00EBAA97 /* Build configuration list for PBXLegacyTarget "nativ_to_java" */;
 			buildPhases = (
 			);
-			buildToolPath = nativ_to_java/Compile.sh;
+			buildToolPath = ./nativ_to_java/Compile.sh;
 			buildWorkingDirectory = "";
 			dependencies = (
 			);
