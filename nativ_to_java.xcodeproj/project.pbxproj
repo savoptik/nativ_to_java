@@ -6,11 +6,30 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		FE370E682387E05000EBAA97 /* HelloWorldJNI.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = HelloWorldJNI.java; sourceTree = "<group>"; };
+		FE370E692387E1DA00EBAA97 /* com_baeldung_jni_HelloWorldJNI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = com_baeldung_jni_HelloWorldJNI.h; sourceTree = "<group>"; };
+		FE370E6A2387E20700EBAA97 /* com_baeldung_jni_HelloWorldJNI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = com_baeldung_jni_HelloWorldJNI.cpp; sourceTree = "<group>"; };
+		FE370E6B2387E3C000EBAA97 /* Compile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Compile.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		FE370E5C2387DFFE00EBAA97 = {
 			isa = PBXGroup;
 			children = (
+				FE370E672387E05000EBAA97 /* nativ_to_java */,
 			);
+			sourceTree = "<group>";
+		};
+		FE370E672387E05000EBAA97 /* nativ_to_java */ = {
+			isa = PBXGroup;
+			children = (
+				FE370E682387E05000EBAA97 /* HelloWorldJNI.java */,
+				FE370E692387E1DA00EBAA97 /* com_baeldung_jni_HelloWorldJNI.h */,
+				FE370E6A2387E20700EBAA97 /* com_baeldung_jni_HelloWorldJNI.cpp */,
+				FE370E6B2387E3C000EBAA97 /* Compile.sh */,
+			);
+			path = nativ_to_java;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -22,7 +41,8 @@
 			buildConfigurationList = FE370E642387DFFE00EBAA97 /* Build configuration list for PBXLegacyTarget "nativ_to_java" */;
 			buildPhases = (
 			);
-			buildToolPath = "/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/javac";
+			buildToolPath = nativ_to_java/Compile.sh;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = nativ_to_java;
