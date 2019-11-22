@@ -9,7 +9,8 @@ public class HelloWorldJNI {
     public static void main(String[] args) {
         HelloWorldJNI hvj = new HelloWorldJNI();
         hvj.sayHello();
-        String str = hvj.sayHelloToMe("Victoria", true);
+        String name = "Victoria";
+        String str = hvj.sayHelloToMe(name, true);
         System.out.println(str);
     }
 
